@@ -1,0 +1,103 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    transition: background 0.3s;
+}
+
+.navScrolled {
+    background: rgba(17, 17, 17, 0.95);
+    backdrop-filter: blur(12px);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoMark {
+    background: var(--red);
+    color: var(--dark);
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    padding: 5px 11px;
+    line-height: 1;
+}
+
+.logoText {
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dark);
+    transition: color 0.3s;
+}
+
+.logoTextScrolled {
+    color: var(--offwhite);
+}
+
+/* Links */
+.links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navLink {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 0.3s;
+}
+
+.navLinkScrolled {
+    color: rgba(232, 230, 225, 0.55);
+}
+
+.navLink:hover {
+    color: var(--red);
+}
+
+/* CTA Button */
+.ctaBtn {
+    background: var(--dark);
+    color: var(--offwhite);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: background 0.25s, color 0.25s;
+}
+
+.ctaBtn:hover {
+    background: var(--offwhite);
+    color: var(--dark);
+}
+
+/* ── Responsive ────────────────────────────────── */
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 16px 24px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .mobileCtaBtn {
+        display: flex;
+    }
+}

@@ -1,0 +1,353 @@
+.heroHome {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    flex: 1;
+}
+
+/* Left Column */
+.heroBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockItem {
+    background: var(--red);
+    padding: 80px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    min-height: 50vh;
+}
+
+.heroTitle {
+    container-type: inline-size;
+    container-name: heroTitle;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+.titleTopRow {
+    display: flex;
+    align-items: center;
+    gap: clamp(24px, 4cqi, 48px);
+    flex-wrap: wrap;
+    margin-bottom: clamp(12px, 2cqi, 24px);
+}
+
+.titleTop,
+.titleBottom {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(34px, 10cqi, 150px);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    color: var(--dark);
+    display: block;
+    margin: 0;
+    word-break: break-word;
+}
+
+.slash {
+    font-weight: 300;
+}
+
+.heroDescription {
+    font-family: var(--font-sans, var(--font-display));
+    font-size: clamp(16px, 1.8cqi, 22px);
+    font-weight: 500;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 440px;
+    min-width: 260px;
+    flex: 1;
+    display: block;
+    margin: 0;
+    padding-top: 4px;
+}
+
+.heroImage {
+    flex: 1;
+    position: relative;
+    min-height: 60vh;
+    background: #111;
+    overflow: hidden;
+    display: flex;
+}
+
+.coverImage {
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Right Column */
+.heroAside {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.asideBlock {
+    background: var(--light, #d6d4cf);
+    padding: 250px 40px 40px 40px;
+}
+
+.asideLabel {
+    font-family: var(--font-sans, var(--font-display));
+    font-size: clamp(24px, 1.5vw, 24px);
+    line-height: 1.1;
+    color: var(--dark);
+    font-weight: 600;
+    margin: 0;
+}
+
+.asideStats {
+    background: var(--charcoal, #1a1a1a);
+    padding: 60px 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.statsTitle {
+    font-family: var(--font-sans, var(--font-display));
+    font-size: 24px;
+    color: var(--offwhite);
+    margin: 0 0 32px 0;
+}
+
+.statsList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.statsItem {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: #8b8b8b;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    background: #8b8b8b;
+    border-radius: 50%;
+}
+
+.statsBlock {
+    margin-top: auto;
+}
+
+.graphAsset {
+    display: flex;
+}
+
+.binaryContent {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.binarySide {
+    width: 6px;
+    height: auto;
+    overflow: visible;
+}
+
+.assetBinary {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.binaryItem {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    color: #8b8b8b;
+    white-space: pre;
+}
+
+.asideCta {
+    background: var(--red);
+    padding: 40px;
+    display: flex;
+    align-items: flex-end;
+    min-height: 240px;
+}
+
+.ctaLink {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-decoration: none;
+    color: var(--dark);
+    transition: transform 0.3s ease;
+}
+
+.ctaLink:hover {
+    transform: translateX(10px);
+}
+
+.ctaIcon {
+    width: 64px;
+    height: 64px;
+}
+
+.ctaLabel {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* News / Services Footer */
+.heroNews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #111;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.newsItem {
+    padding: 40px 60px;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.3s ease;
+    color: var(--offwhite);
+}
+
+.newsItem:last-child {
+    border-right: none;
+}
+
+.newsItem:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.newsItemLines {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.newsItemLineX {
+    width: 24px;
+    height: 1px;
+    background: var(--red);
+}
+
+.newsTitle {
+    font-family: var(--font-display);
+    font-size: 20px;
+    margin: 0 0 16px 0;
+    color: var(--offwhite);
+}
+
+.newsDescription {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .heroAside {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .heroNews {
+        grid-template-columns: 1fr;
+    }
+
+    .newsItem {
+        padding: 40px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .newsItem:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .blockItem {
+        padding: 50px 24px;
+        min-height: 30vh;
+    }
+
+    .titleTopRow {
+        display: contents;
+    }
+
+    .titleTop {
+        order: 1;
+        margin-bottom: -5px;
+    }
+
+    .titleBottom {
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    .titleTop,
+    .titleBottom {
+        font-size: clamp(38px, 12vw, 46px);
+        letter-spacing: -0.03em;
+        line-height: 0.9;
+    }
+
+    .heroDescription {
+        order: 3;
+        font-size: 15px;
+        line-height: 1.5;
+        min-width: unset;
+        width: 100%;
+        padding-top: 16px;
+    }
+
+    .heroImage {
+        min-height: 30vh;
+    }
+
+    .asideBlock,
+    .asideStats,
+    .asideCta {
+        padding: 40px 24px;
+    }
+
+    .newsItem {
+        padding: 40px 24px;
+    }
+}

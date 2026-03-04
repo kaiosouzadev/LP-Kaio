@@ -1,0 +1,136 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+}
+
+/* ── CTA panel ─────────────────────────────────── */
+
+.ctaPanel {
+    background: var(--red);
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-style: italic;
+    font-size: clamp(60px, 9vw, 118px);
+    text-transform: uppercase;
+    line-height: 0.88;
+    letter-spacing: -0.03em;
+    color: var(--dark);
+    margin: 0 0 44px 0;
+}
+
+.subtext {
+    font-family: var(--font-display);
+    font-size: 20px;
+    line-height: 1.65;
+    color: rgba(0, 0, 0, 0.75);
+    max-width: 420px;
+    margin-bottom: 52px;
+}
+
+.ctaLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--dark);
+    color: var(--offwhite);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 18px 32px;
+    width: fit-content;
+    transition: background 0.25s, color 0.25s;
+}
+
+.ctaLink:hover {
+    background: var(--offwhite);
+    color: var(--dark);
+}
+
+/* ── Info panel ────────────────────────────────── */
+
+.infoPanel {
+    background: var(--dark);
+    padding: 80px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.infoLabel {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(232, 230, 225, 0.26);
+    margin-bottom: 44px;
+}
+
+.infoItem {
+    margin-bottom: 26px;
+}
+
+.infoItemLabel {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 5px;
+}
+
+.infoItemValue {
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--offwhite);
+}
+
+.infoLink {
+    color: inherit;
+    transition: color 0.2s;
+}
+
+.infoLink:hover {
+    color: var(--red);
+}
+
+/* ── Responsive ────────────────────────────────── */
+
+@media (max-width: 1024px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .infoPanel {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 60px 48px;
+    }
+
+    .ctaPanel {
+        padding: 80px 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ctaPanel {
+        padding: 60px 28px;
+    }
+
+    .infoPanel {
+        padding: 48px 28px;
+    }
+
+    .subtext {
+        margin-bottom: 36px;
+    }
+}

@@ -1,0 +1,143 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ── Left (text) ───────────────────────────────── */
+
+.textPanel {
+    background: var(--dark);
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sectionLabel {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+}
+
+.labelLine {
+    width: 22px;
+    height: 1px;
+    background: var(--red);
+    display: block;
+}
+
+.heading {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(44px, 5.5vw, 68px);
+    text-transform: uppercase;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    color: var(--offwhite);
+    margin-bottom: 40px;
+}
+
+.headingAccent {
+    color: var(--red);
+}
+
+.bio {
+    font-family: var(--font-display);
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(232, 230, 225, 0.55);
+    max-width: 480px;
+}
+
+/* ── Right (skills) ────────────────────────────── */
+
+.skillsPanel {
+    background: var(--red);
+    padding: 80px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skillsLabel {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #000000c2;
+    margin-bottom: 44px;
+}
+
+.skillItem {
+    margin-bottom: 20px;
+}
+
+.skillHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.skillName {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--dark);
+}
+
+.skillPct {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.skillTrack {
+    height: 2px;
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.skillFill {
+    height: 2px;
+    background: var(--dark);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+
+/* ── Responsive ────────────────────────────────── */
+
+@media (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .textPanel {
+        border-right: none;
+        padding: 80px 48px;
+    }
+
+    .skillsPanel {
+        padding: 60px 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .textPanel {
+        padding: 60px 28px;
+    }
+
+    .skillsPanel {
+        padding: 48px 28px;
+    }
+}
