@@ -10,7 +10,8 @@ const iconMap = {
 
 export default function Services() {
     return (
-        <section id="servicos" className={styles.services}>
+        <section id="servicos" className={styles.services} aria-label="Nossos Serviços de Desenvolvimento">
+            <h2 className={styles.srOnly}>Serviços Digitais Especializados</h2>
             {services.map((s, i) => {
                 const Icon = iconMap[s.iconType];
                 return (
@@ -29,6 +30,7 @@ export default function Services() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.exploreBtn}
+                                aria-label={`Solicitar orçamento para ${s.title}`}
                             >
                                 Contratar →
                             </a>

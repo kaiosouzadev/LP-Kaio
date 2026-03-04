@@ -4,7 +4,7 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
     return (
-        <section id="hero" className={styles.heroHome}>
+        <section id="hero" className={styles.heroHome} aria-label="Introdução Profissional">
             <div className={styles.content}>
                 {/* Left Side (Red Block & Video) */}
                 <div className={styles.heroBlock}>
@@ -16,9 +16,9 @@ export default function Hero() {
                                     Web <span className={styles.slash}>/</span>
                                 </span>
                                 <span className={styles.heroDescription}>
-                                    Sites modernos, landing pages e sistemas digitais
-                                    com mais de 4 anos de experiência — focado em
-                                    resultados reais para negócios.
+                                    Desenvolvedor Full Stack especializado em Next.js e
+                                    soluções digitais de alta performance. Mais de 4 anos
+                                    transformando ideias em resultados reais para negócios.
                                 </span>
                             </span>
                             <span className={styles.titleBottom}>Desenvolvimento</span>
@@ -27,7 +27,7 @@ export default function Hero() {
                     <div className={styles.heroImage}>
                         <Image
                             src="/images/hero/hero-banner.png"
-                            alt="Kaio de Souza - Web Developer Banner"
+                            alt="Kaio de Souza - Desenvolvedor Web Full Stack e Especialista em Next.js"
                             fill
                             priority
                             className={styles.coverImage}
@@ -39,7 +39,7 @@ export default function Hero() {
                 <div className={styles.heroAside}>
                     <div className={styles.asideBlock}>
                         <p className={styles.asideLabel}>
-                            Desenvolvimento web orientado a conversão, performance e automação inteligente.
+                            Soluções web orientadas a conversão, performance máxima e arquitetura impecável.
                         </p>
                     </div>
 
@@ -56,7 +56,11 @@ export default function Hero() {
                     </div>
 
                     <div className={styles.asideCta}>
-                        <a className={styles.ctaLink} href="#servicos">
+                        <a
+                            className={styles.ctaLink}
+                            href="#servicos"
+                            aria-label="Explorar meus serviços e projetos de desenvolvimento"
+                        >
                             <svg className={styles.ctaIcon} viewBox="0 0 132 132" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M112.967 19.8906L19.9668 111.891" stroke="currentColor" strokeWidth="20" />
                                 <path d="M110 27L110 106" stroke="currentColor" strokeWidth="20" />

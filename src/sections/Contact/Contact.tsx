@@ -3,22 +3,28 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
     return (
-        <section id="contato" className={styles.contact}>
+        <section id="contato" className={styles.contact} aria-label="Contato e Orçamentos">
             {/* ── CTA panel ── */}
             <div className={styles.ctaPanel}>
                 <h2 className={styles.heading}>
-                    Vamos
+                    Inicie sua
                     <br />
-                    trabalhar
+                    Estratégia
                     <br />
-                    juntos?
+                    Digital
                 </h2>
                 <p className={styles.subtext}>
-                    Você tem o projeto, eu tenho a expertise. Vamos transformar sua ideia
-                    em uma solução digital de alto impacto.
+                    Pronto para elevar o patamar do seu negócio? Vamos converter sua visão
+                    em uma presença digital dominante e lucrativa.
                 </p>
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.ctaLink}>
-                    Enviar mensagem ↗
+                <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.ctaLink}
+                    aria-label="Falar com o especialista via WhatsApp"
+                >
+                    Falar com Especialista ↗
                 </a>
             </div>
 

@@ -3,14 +3,14 @@ import styles from "./Process.module.css";
 
 export default function Process() {
     return (
-        <section id="processo" className={styles.process}>
+        <section id="processo" className={styles.process} aria-label="Nosso Processo de Trabalho">
             <div className={styles.header}>
                 <h2 className={styles.heading}>
-                    Como
+                    Metodologia
                     <br />
-                    <span className={styles.headingAccent}>trabalho.</span>
+                    <span className={styles.headingAccent}>Estratégica.</span>
                 </h2>
-                <p className={styles.headerSub}>Do briefing à entrega final.</p>
+                <p className={styles.headerSub}>Do planejamento à entrega de alta performance.</p>
             </div>
 
             <div className={styles.grid}>

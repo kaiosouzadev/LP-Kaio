@@ -23,30 +23,30 @@ export default function About() {
     }, []);
 
     return (
-        <section id="sobre" className={styles.about}>
+        <section id="sobre" className={styles.about} aria-label="Sobre o Especialista">
             {/* ── Text panel ── */}
             <div className={styles.textPanel}>
                 <div className={styles.sectionLabel}>
                     <span className={styles.labelLine} />
-                    Sobre mim
+                    Sobre o Especialista
                 </div>
                 <h2 className={styles.heading}>
-                    Dev de
+                    Estrategista em
                     <br />
-                    <em className={styles.headingAccent}>impacto</em>
+                    <em className={styles.headingAccent}>Sistemas Digitais</em>
                     <br />
-                    real.
+                    de Alto Impacto.
                 </h2>
                 <p className={styles.bio}>
-                    Sou desenvolvedor web com mais de 4 anos de experiência em criação de
-                    sites modernos, landing pages e sistemas digitais. Atuo com WordPress,
-                    Elementor, Supabase e automações — sempre focado em entregar
-                    soluções que geram resultados concretos.
+                    Sou desenvolvedor web com mais de 4 anos de experiência consolidada na
+                    criação de sistemas modernos, Next.js, arquitetura de software e
+                    landing pages otimizadas. Minha atuação une tecnologia de ponta com
+                    visão estratégica de negócios para gerar ROI real.
                     <br />
                     <br />
-                    Gestão completa de hospedagens, suporte técnico e resolução de
-                    problemas em ambientes de produção. Sempre atualizado com as melhores
-                    ferramentas do mercado.
+                    Especialista em ecossistemas Supabase, automações de workflow e gestão
+                    técnica completa. Meu compromisso é com a performance máxima e a
+                    escalabilidade de cada projeto digital.
                 </p>
             </div>
 
