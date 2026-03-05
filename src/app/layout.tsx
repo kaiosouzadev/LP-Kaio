@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata = {
@@ -47,6 +48,7 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning>
         {children}
+        <Analytics />
 
         {/* JSON-LD */}
         <script
