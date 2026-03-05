@@ -1,5 +1,24 @@
-import Script from "next/script";
+import { Barlow, Barlow_Condensed, DM_Mono } from "next/font/google";
 import "./globals.css";
+
+const barlow = Barlow({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-barlow",
+});
+
+const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["700", "900"],
+  variable: "--font-barlow-condensed",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-dm-mono",
+});
+
 
 export const metadata = {
   metadataBase: new URL("https://kaiosouzadev.vercel.app"),
@@ -46,12 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Condensed:wght@700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-      </head>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className={`${barlow.variable} ${barlowCondensed.variable} ${dmMono.variable}`}>
         {children}
 
         {/* JSON-LD */}

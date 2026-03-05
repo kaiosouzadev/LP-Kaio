@@ -28,7 +28,7 @@ export default function Navbar() {
     }, []);
 
     useEffect(() => {
-        const translations: any = {
+        const translations: Record<string, any> = {
             pt: {
                 navServices: "Serviços", navAbout: "Sobre", navProcess: "Processo", navContactBtn: "Falar Comigo →",
                 heroTitleWeb: "Web /", heroTitleDev: "Desenvolvimento",

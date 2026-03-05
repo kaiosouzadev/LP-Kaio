@@ -1,4 +1,4 @@
-import { stackStatus, services } from "@/data/content";
+import { stackStatus } from "@/data/content";
 import Image from "next/image";
 import styles from "./Hero.module.css";
 
