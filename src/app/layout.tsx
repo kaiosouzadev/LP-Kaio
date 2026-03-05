@@ -2,11 +2,16 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://kaiodesouza.dev"),
   title: "Kaio de Souza — Desenvolvedor Web em São Paulo | Sites, Landing Pages e Lojas Online",
   description: "Desenvolvedor web com +4 anos de experiência em São Paulo. Criação de sites modernos, landing pages de alta conversão, lojas online e automações. Solicite um orçamento.",
   keywords: "desenvolvedor web São Paulo, criação de sites, landing page alta conversão, loja online, WordPress, SEO, e-commerce, automação web",
   authors: [{ name: "Kaio de Souza" }],
   robots: "index, follow",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
   alternates: {
     canonical: "https://kaiodesouza.dev/",
   },
@@ -15,6 +20,7 @@ export const metadata = {
     url: "https://kaiodesouza.dev/",
     title: "Kaio de Souza — Desenvolvedor Web | Sites & Landing Pages em São Paulo",
     description: "Sites modernos, landing pages de alta conversão e lojas online. +4 anos de experiência. São Paulo, BR.",
+    siteName: "Kaio de Souza",
     locale: "pt_BR",
     images: [
       {
