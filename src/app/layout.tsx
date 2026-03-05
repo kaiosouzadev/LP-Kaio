@@ -2,7 +2,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL("https://kaiodesouza.dev"),
+  metadataBase: new URL("https://kaiosouzadev.vercel.app"),
   title: "Kaio de Souza — Desenvolvedor Web em São Paulo | Sites, Landing Pages e Lojas Online",
   description: "Desenvolvedor web com +4 anos de experiência em São Paulo. Criação de sites modernos, landing pages de alta conversão, lojas online e automações. Solicite um orçamento.",
   keywords: "desenvolvedor web São Paulo, criação de sites, landing page alta conversão, loja online, WordPress, SEO, e-commerce, automação web",
