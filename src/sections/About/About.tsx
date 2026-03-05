@@ -39,7 +39,7 @@ export default function About() {
                 </h2>
                 <p className={styles.bio}>
                     Sou desenvolvedor web com mais de 4 anos de experiência consolidada na
-                    criação de sistemas modernos, Next.js, arquitetura de software e
+                    criação de sistemas modernos, tecnologias modernas de front-end, arquitetura de software e
                     landing pages otimizadas. Minha atuação une tecnologia de ponta com
                     visão estratégica de negócios para gerar ROI real.
                     <br />

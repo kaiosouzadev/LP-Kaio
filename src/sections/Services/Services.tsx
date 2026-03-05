@@ -23,8 +23,8 @@ export default function Services() {
                         </div>
                         <div>
                             <div className={styles.num}>{s.num}</div>
-                            <h3 className={styles.cardTitle}>{s.title}</h3>
-                            <p className={styles.desc}>{s.desc}</p>
+                            <h3 className={`${styles.cardTitle} service-card-title`}>{s.title}</h3>
+                            <p className={`${styles.desc} service-card-desc`}>{s.desc}</p>
                             <a
                                 href={whatsappUrl}
                                 target="_blank"

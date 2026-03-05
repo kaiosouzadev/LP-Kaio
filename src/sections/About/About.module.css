@@ -44,8 +44,10 @@
     margin-bottom: 40px;
 }
 
-.headingAccent {
+.headingAccent,
+.heading em {
     color: var(--red);
+    font-style: italic;
 }
 
 .bio {
@@ -86,12 +88,10 @@
 }
 
 .skillName {
-    font-family: var(--font-display);
-    font-size: 13px;
-    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 20px;
+    color: var(--offwhite);
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--dark);
 }
 
 .skillPct {

@@ -34,19 +34,19 @@ export const services: Service[] = [
     {
         num: "01.",
         title: "Landing Pages & Conversão",
-        desc: "Páginas de alta performance com Antigravity, WordPress e as ferramentas mais modernas. Foco em conversão real e resultados mensuráveis.",
+        desc: "Páginas de alta performance focadas em conversão real e resultados mensuráveis. Antigravity e as ferramentas mais modernas.",
         iconType: "radial",
     },
     {
         num: "02.",
-        title: "Sites Profissionais Sob Medida",
-        desc: "Desenvolvimento de sites para fortalecer sua presença digital e gerar mais oportunidades. Projetos pensados para oferecer performance, clareza e conversão.",
+        title: "Sites Institucionais & Autoridade",
+        desc: "Desenvolvimento de sites estratégicos para fortalecer sua presença digital e gerar autoridade. Projetos com performance e clareza.",
         iconType: "triangle",
     },
     {
         num: "03.",
-        title: "IA & Automações",
-        desc: "Integração de Inteligência Artificial e automações com N8N. Processos otimizados e escaláveis para maximizar a eficiência do seu negócio.",
+        title: "Sistemas Simples & Eficiência",
+        desc: "Criação de sistemas diretos e eficientes para otimizar sua gestão e relacionamento com clientes. Tecnologia que facilita o dia a dia.",
         iconType: "sphere",
     },
 ];

@@ -16,7 +16,7 @@ export default function Hero() {
                                     Web <span className={styles.slash}>/</span>
                                 </span>
                                 <span className={styles.heroDescription}>
-                                    Desenvolvedor Full Stack especializado em Next.js e
+                                    Desenvolvedor Full Stack especializado em tecnologias modernas de front-end e
                                     soluções digitais de alta performance. Mais de 4 anos
                                     transformando ideias em resultados reais para negócios.
                                 </span>
@@ -27,7 +27,7 @@ export default function Hero() {
                     <div className={styles.heroImage}>
                         <Image
                             src="/images/hero/hero-banner.png"
-                            alt="Kaio de Souza - Desenvolvedor Web Full Stack e Especialista em Next.js"
+                            alt="Kaio de Souza - Desenvolvedor Web Full Stack e Especialista em tecnologias modernas de front-end"
                             fill
                             priority
                             className={styles.coverImage}

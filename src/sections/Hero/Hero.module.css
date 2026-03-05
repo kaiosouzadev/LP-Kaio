@@ -65,7 +65,7 @@
 
 .heroDescription {
     font-family: var(--font-sans, var(--font-display));
-    font-size: clamp(16px, 1.8cqi, 22px);
+    font-size: clamp(14px, 1.8cqi, 15px);
     font-weight: 500;
     line-height: 1.4;
     color: rgba(0, 0, 0, 0.8);
@@ -215,11 +215,13 @@
 }
 
 .ctaLabel {
-    font-family: var(--font-display);
-    font-weight: 600;
+    font-family: var(--font-mono);
+    font-weight: 500;
     font-size: 20px;
     margin: 0;
     line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
 }
 
 /* News / Services Footer */
@@ -330,7 +332,7 @@
 
     .heroDescription {
         order: 3;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.5;
         min-width: unset;
         width: 100%;
